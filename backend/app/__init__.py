@@ -1,0 +1,3 @@
+"""
+CareerGPT backend application package.
+"""
