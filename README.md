@@ -1,18 +1,19 @@
-<div align="center">
+# CareerGPT
 
-# 🧭 CareerGPT
+**An AI-assisted job search workspace for discovering roles, evaluating fit, preparing tailored applications, and tracking progress.**
 
-### AI-powered job application platform — discovery, tailoring, matching, and auto-apply, in one pipeline.
+CareerGPT brings job discovery, resume matching, application materials, workflow automation, and application tracking into one system.
 
-[![Python](https://img.shields.io/badge/python-3.10%2B-2563EB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/)
-[![FastAPI](https://img.shields.io/badge/FastAPI-0.115-0B1D3A?style=flat-square&logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.40-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)](https://streamlit.io/)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-2563EB?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![License](https://img.shields.io/badge/license-Proprietary-0B1D3A?style=flat-square)](#license)
+| Component | Implementation |
+|---|---|
+| API | FastAPI |
+| Orchestration | LangGraph agents and Celery workers |
+| Matching | Qdrant and sentence-transformer embeddings |
+| Interface | Streamlit |
+| Data services | PostgreSQL and Redis |
+| Browser workflows | Playwright |
 
-[Overview](#overview) · [Features](#features) · [Architecture](#architecture) · [Quick Start](#quick-start) · [Configuration](#configuration) · [API Docs](#api-documentation) · [Testing](#testing) · [Roadmap](#roadmap)
-
-</div>
+[Architecture](#architecture) · [Features](#features) · [Quick Start](#quick-start) · [Configuration](#configuration) · [Testing](#testing)
 
 ---
 
@@ -24,8 +25,6 @@ It ships as two independently deployable pieces:
 
 - **`backend/`** — a FastAPI service with LangGraph-orchestrated AI agents, Celery background workers, and a Qdrant-backed matching engine
 - **`frontend/`** — a Streamlit client (navy/blue/white theme) that talks to the backend purely over REST
-
-> 📸 *Add product screenshots or a demo GIF here once you have a running deployment — a visual of the Dashboard and Applications pipeline sells this project far better than text.*
 
 ---
 
